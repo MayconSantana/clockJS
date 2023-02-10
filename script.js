@@ -15,13 +15,9 @@ const formatDigits = (el) => {
 const relogio = () => {
     let dayToday = new Date();
 
-    let hrs = dayToday.getHours();
-    let min = dayToday.getMinutes();
-    let sec = dayToday.getSeconds();
-
-    hrs = formatDigits(hrs)
-    min = formatDigits(min)
-    sec = formatDigits(sec)
+    let hrs = formatDigits(dayToday.getHours());
+    let min = formatDigits(dayToday.getMinutes());
+    let sec = formatDigits(dayToday.getSeconds());
 
     hrsEl.innerHTML = hrs;
     minEl.innerHTML = min;
